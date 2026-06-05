@@ -4,12 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>개인프로젝트</title>
+    <link rel="stylesheet" href="./my-CSS/style.css" />
   </head>
   <body>
     <header class="site-header">
-      <p class="home">Home</p>
-      <p class="About">About</p>
-      <p class="Projects">Projects & Skills</p>
+      <div class="site-header__inner">
+        <nav class="site-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects & Skills</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <main id="home">
+      <section class="hero">
+        <p class="intro">FRONTEND DEVELOPER</p>
+        <h1 class="name">민재현</h1>
+        <h2 class="hero__contents">
+          "보기 좋은화면"을넘어<br />
+          사용자가 편안하게느끼는경험을만드는개발자
+        </h2>
+
+        <div class="hero__image-box">
+          <img
+            src="./image/my-image.jpg"
+            alt="증명사진"
+            class="my_image"
+            width="320"
+          />
+        </div>
+
+        <div class="hero__back-image"></div>
+      </section>
+
+      <section id="About" class="About-section">
+        <article class="About__text-box">
+          <p class="About-me">ABOUT ME</p>
+          <h2 class="About__contents">
+            사람이 직관적으로<br />
+            이해하는 구조를만드는<br />
+            프론트엔드 개발자
+          </h2>
+          <p class="About__ex">
+            보드게임을 좋아하며 다양한 사람들과 소통하는 경험 속에서 "사람이
+            직관적으<br />
+            로 이해하는 구조"에 관심을 가지게 되었습니다. 이후 웹 프론트엔드를
+            공부하<br />
+            며 사용자의 행동을 고려해 인터페이스를 만드는 과정에 매력을 느끼고
+            있습니<br />
+            다.
+          </p>
+        </article>
+
+        <article class="strengths__key-box">
+          <h3 class="key-strengths">KEY STRENGTHS</h3>
+          <ul class="key__list">
+            <li>커뮤니케이션</li>
+            <li>꾸준함</li>
+            <li>글로벌 감각</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="Projects" class="Projects-section">
+        <p class="Projects">PROJECTS</p>
+        <article>
+          <h2 class="fr-project">Self-Introduction WebPage</h2>
+          <p class="fr-project__comment">진행 중 | HTML, CSS,JavaScript</p>
+          <h3 class="fr-project__contents">
+            자기소개와 포트폴리오를담은반응형웹페이지입니다.직관적인구조<br />
+            와깔끔한UI를목표로제작중입니다.
+          </h3>
+        </article>
+
+        <article>
+          <h2 class="sc-project">Board GameMeetupSite</h2>
+          <p class="sc-project__comment">예정 | React, TailwindCSS</p>
+          <h3 class="sc-project__contents">
+            보드게임 모임을쉽게만들고참여할수있는커뮤니티플랫폼입니다.<br />
+            일정관리와모임매칭기능을구현할예정입니다.
+          </h3>
+        </article>
+
+        <article class="skills-box">
+          <ul>
+            <li>
+              Frontend
+              <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </li>
+            <li>
+              Learning
+              <ul>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>GitHub</li>
+              </ul>
+            </li>
+            <li>
+              Tools
+              <ul>
+                <li>VS Code</li>
+                <li>Figma</li>
+                <li>Notion</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        mjhb403204@gmail.com | GitHub: https://github.com/mjhb403204-ui | Seoul,
+        Korea
+      </p>
+    </footer>
   </body>
 </html>
