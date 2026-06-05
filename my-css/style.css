@@ -151,6 +151,151 @@ html {
   z-index: 1;
 }
 
+/*About*/
+
+.About-section {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 120px 100px 100px;
+  padding-top: 120px;
+  position: relative;
+}
+.About__text-box {
+  width: 60%;
+  max-width: 700px;
+}
+.About-me {
+  font-size: 16px;
+  color: #d8d8d8;
+
+  margin-bottom: 20px;
+}
+.About__contents {
+  font-size: 42px;
+  font-weight: 500;
+
+  line-height: 1.3;
+
+  margin-bottom: 50px;
+
+  position: relative;
+
+  padding-left: 20px;
+}
+
+.About__contents::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 8px;
+
+  width: 2px;
+  height: 140px;
+
+  background: rgba(255, 255, 255, 0.8);
+}
+.About__ex {
+  font-size: 18px;
+  line-height: 1.8;
+
+  max-width: 650px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  margin-bottom: 80px;
+}
+.strengths__key-box {
+  width: 100%;
+
+  margin-top: 0;
+}
+.key-strengths {
+  font-size: 16px;
+
+  margin-bottom: 15px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+.key__list {
+  display: flex;
+
+  justify-content: space-between;
+
+  max-width: 500px;
+
+  list-style: none;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+  padding-top: 20px;
+}
+.key__list::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.4);
+}
+.key__list li {
+  font-size: 18px;
+}
+.about__visual {
+  position: absolute;
+
+  right: 120px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 240px;
+  height: 360px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+.about__visual::after {
+  content: "";
+
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  z-index: -1;
+}
+.About-section::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 80px;
+  left: 100px;
+  right: 100px;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
 /*footer*/
 .site-footer {
   position: fixed;
